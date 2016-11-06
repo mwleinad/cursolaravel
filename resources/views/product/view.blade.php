@@ -58,7 +58,7 @@
 
     <div class="starter-template">
         <h1>Bootstrap starter template</h1>
-        <p class="lead">Cambiar description.</p>
+        <p class="lead">Cambiar descripcion.</p>
     </div>
 
 </div><!-- /.container -->
