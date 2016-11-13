@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -20,5 +21,11 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(Product::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name
     ];
 });
