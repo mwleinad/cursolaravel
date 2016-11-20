@@ -45,5 +45,6 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <script src="{{ config('settings.ASSETS_URL_PREFIX').elixir('/assets/js/app.min.js') }}"></script>
+@yield('javascript')
 </body>
 </html>

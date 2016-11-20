@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Product;
+use App\Models\Client;
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -25,6 +26,12 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 });
 
 $factory->define(Product::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name
+    ];
+});
+
+$factory->define(Client::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name
     ];

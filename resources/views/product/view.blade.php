@@ -1,19 +1,29 @@
 {{--este es un comentario --}}
+
 {{--basicamente cada nueva pagina le diremos que extienda de nuestro layout master --}}
 @extends("layouts.master")
 
 {{--un yield con el mismo nombre en layouts.master sera reemplazado por nuestro section --}}
-@section('title', "welcome page")
+@section('title', "test")
 
 @section('content')
     {{--esto incluira primero el contenido del layouts.master--}}
     @parent
-    Lista de productos
+    Lista de productos y clientes
 @endsection
 
 @section('container')
     {{--esto incluira primero el contenido del layouts.master--}}
     @parent
+    <div class="row">
+        <button type="button" class="btn btn-primary addProduct">Agregar</button>
+    </div>
     @include("product.list")
+
+    @include("client.list")
+@endsection
+
+@section('javascript')
+    <script src="{{ config('settings.ASSETS_URL_PREFIX').elixir('/assets/js/product.min.js') }}"></script>
 @endsection
 
