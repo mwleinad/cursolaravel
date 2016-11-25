@@ -27,3 +27,12 @@
     <script src="{{ config('settings.ASSETS_URL_PREFIX').elixir('/assets/js/product.min.js') }}"></script>
 @endsection
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
