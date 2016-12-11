@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table" id="clientList">
     <thead>
     <tr>
         <th>Id</th>
@@ -9,13 +9,7 @@
     </thead>
     <tbody>
     @foreach($clients as $client)
-        <tr>
-            <td>{{$client["id"]}}</td>
-            <td>{{$client["name"]}}</td>
-            <th>{{$client["created_at"]->diffForHumans()}}
-</th>
-            <td></td>
-        </tr>
+        @include("client.row")
     @endforeach
 
     </tbody>

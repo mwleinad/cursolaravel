@@ -20,8 +20,6 @@ const app = new Vue({
 });*/
 
 var _csrf_token = $('meta[name="csrf-token"]').attr('content');
-console.log(_csrf_token
-);
 $.ajaxSetup({
     headers: {
         'X-CSRF-TOKEN': _csrf_token

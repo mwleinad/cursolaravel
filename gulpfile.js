@@ -36,6 +36,11 @@ elixir(function(mix) {
         'product/product-ui.js',
     ], 'public/assets/js/product.min.js');
 
+    mix.scripts([
+        'client/client.js',
+        'client/client-ui.js',
+    ], 'public/assets/js/client.min.js');
+
     //para prevenir problemas de cache, cada que corremos gulp se genera una nueva version, crea una nueva carpeta build
     mix.version([
         'assets/css/app.min.css',
